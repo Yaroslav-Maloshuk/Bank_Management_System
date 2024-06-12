@@ -1,6 +1,6 @@
 # Bank_Management_System
 
-Bank management system is a console application written in C++.
+Bank management system is a console application written in two programming languages: C++, Java.
 
 Possibilities:
 - Deposit money
