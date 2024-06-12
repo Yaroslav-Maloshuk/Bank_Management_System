@@ -5,6 +5,8 @@ class BankAccount {
     private:
         std::string name;
         double balance;
+        double euro_rate = 0.93;
+        double uah_rate = 40.47;
 
     public:
         BankAccount(std::string accountName, double initialBalance) : name(std::move(accountName)), balance(initialBalance) {}
@@ -19,14 +21,17 @@ class BankAccount {
             if (amount <= balance) {
                 balance -= amount;
             }
+            else {
+                std::cout << "You are overdrawn!" << std::endl;
+            }
         }
 
         void convertToEuro(double amount) {
-            std::cout << "Account: " << name << "\nBalance: €" << 0.92 * balance << std::endl;
+            std::cout << "Account: " << name << "\nBalance: €" << euro_rate * balance << std::endl;
         }
 
         void convertToUAH(double amount) {
-            std::cout << "Account: " << name << "\nBalance: " << 38.78 * balance << "₴" << std::endl;
+            std::cout << "Account: " << name << "\nBalance: " << uah_rate * balance << "₴" << std::endl;
         }
 
         void display(double amount) {
