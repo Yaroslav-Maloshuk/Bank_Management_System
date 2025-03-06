@@ -1,6 +1,6 @@
 # Bank_Management_System
 
-Bank management system is a console application written in two programming languages: C++, Java, Python.
+Bank management system is a console application written in a programming language: Python.
 
 Possibilities:
 - Deposit money
